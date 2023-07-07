@@ -1,0 +1,99 @@
+.weather{
+  background-image: url('https://media.istockphoto.com/id/184103864/es/foto/nubes-en-el-cielo.jpg?s=612x612&w=0&k=20&c=owehXuhW5eJ9TgWcrGkJwCeYWXxfGBItcaaHmtNS4tY=');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.name{
+  text-align: center;
+  padding-top: 30px;
+  color: #113f67;
+  font-size: 50px;
+}
+
+.error-message{
+  margin-left: 35%;
+  font-size: 20px;
+  margin-top: 30px;
+  color: red;
+  font-weight: 700;
+}
+
+input[type='text']{
+  height: 30px;
+  width: 20%;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px black;
+  margin-left: 35%;
+}
+
+input[type='text']::placeholder{
+  color: black;
+  padding-left: 10px;
+}
+button{
+  width: 10%;
+  height: 35px;
+  background-color: #113f67;
+  border-radius: 10px;
+  margin-left: 1%;
+
+}
+
+.description{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 30%;
+  margin-top: 30px;
+  border: 1px solid grey;
+  width: 35%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px black;
+
+}
+
+.description img{
+  width: 150px;
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .name{
+    font-size: 30px;
+  }
+
+  button{
+    width: 20%;
+    height: 40px;
+  }
+
+  input[type='text']{
+    height: 35px;
+    width: 30%;
+    margin-left: 25%;
+  }
+
+  .description{
+    margin-left: 10%;
+    width: 75%;
+    padding-left: 5%;
+
+
+  }
+
+  .description img{
+    width: 80px;
+
+  }
+
+  .description h3{
+    font-size: 15px;
+  }
+}

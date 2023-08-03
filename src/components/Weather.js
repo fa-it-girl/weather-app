@@ -3,7 +3,8 @@ import ShowWeather from './ShowWeather';
 import './Weather.css';
 
 const Weather = () => {
-  const APIKEY = '46f8ad14ba378a305515d515de827964';
+  const password = process.env.APIKEY
+  console.log(password)
   const [input, setInput] = useState({
     city: '',
     country: ''
@@ -21,7 +22,7 @@ const Weather = () => {
 
   async function weatherData() {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${input.city},${input.country}&appid=${APIKEY}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${input.city},${input.country}&appid=46f8ad14ba378a305515d515de827964`
     );
     const data = await response.json();
 
